@@ -10,7 +10,7 @@ class Xrmcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6d4d493dd937c605e0e1811dc6cc34aa7cf314bb8fc70648e4a6e7ac0c1e1b8a"
+      sha256 "8e5135040e123dccbe4a70bbe057ed8b321ccae5d17438ad1e14b4636340cb8c"
 
       define_method(:install) do
         bin.install "xrmcp"
@@ -18,7 +18,7 @@ class Xrmcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "65c6aa5f6e8e40d7f815fe8a464a3c15f6ae2067a8fdca2303acda23eb0bc954"
+      sha256 "de81855054d36795aa291d06821147c2a08e1857e49178c08db8932de85a4a99"
 
       define_method(:install) do
         bin.install "xrmcp"
@@ -29,14 +29,14 @@ class Xrmcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_linux_amd64.tar.gz"
-      sha256 "77276f9e3e09ac617fca5a4096675e5a2763ea2b3d16d9c818ea03c038d4e5b0"
+      sha256 "9434b75b44642d69a04053cb9065c52591255ac92222d628e47354d95e59a665"
       define_method(:install) do
         bin.install "xrmcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_linux_arm64.tar.gz"
-      sha256 "19f1633e17795bcea2c66a3669678f83cbf572fb308d1c2d19da1a9b1af4d889"
+      sha256 "8ab15aa42e4c74c9fe83226557748b4801b151dfdb245a0c4392a3d05e1015ee"
       define_method(:install) do
         bin.install "xrmcp"
       end
