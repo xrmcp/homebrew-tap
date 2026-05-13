@@ -5,20 +5,20 @@
 class Xrmcp < Formula
   desc "Go CLI for managing and running the xrMCP runtime server."
   homepage "https://github.com/xrmcp/cli"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8e5135040e123dccbe4a70bbe057ed8b321ccae5d17438ad1e14b4636340cb8c"
+      url "https://github.com/xrmcp/cli/releases/download/v0.1.1/xrmcp_0.1.1_darwin_amd64.tar.gz"
+      sha256 "03b6ca13ff175ab6ea734016da15de1b6b8f65a85b69ba4c7364b59b466505fb"
 
       define_method(:install) do
         bin.install "xrmcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "de81855054d36795aa291d06821147c2a08e1857e49178c08db8932de85a4a99"
+      url "https://github.com/xrmcp/cli/releases/download/v0.1.1/xrmcp_0.1.1_darwin_arm64.tar.gz"
+      sha256 "23519b027bd83e26c83514f2feada398340fd58fe200bba85e98b54ccc0e9ba0"
 
       define_method(:install) do
         bin.install "xrmcp"
@@ -28,15 +28,15 @@ class Xrmcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_linux_amd64.tar.gz"
-      sha256 "9434b75b44642d69a04053cb9065c52591255ac92222d628e47354d95e59a665"
+      url "https://github.com/xrmcp/cli/releases/download/v0.1.1/xrmcp_0.1.1_linux_amd64.tar.gz"
+      sha256 "4fee14854aa2512250abab75474dcfd9640f1b514deb35cff372c4b825319c49"
       define_method(:install) do
         bin.install "xrmcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xrmcp/cli/releases/download/v0.1.0/xrmcp_0.1.0_linux_arm64.tar.gz"
-      sha256 "8ab15aa42e4c74c9fe83226557748b4801b151dfdb245a0c4392a3d05e1015ee"
+      url "https://github.com/xrmcp/cli/releases/download/v0.1.1/xrmcp_0.1.1_linux_arm64.tar.gz"
+      sha256 "47b1b6e3df07ec91706cb06184af4bc394e38c9ca7a9db6d8a470c07fa0bdb93"
       define_method(:install) do
         bin.install "xrmcp"
       end
